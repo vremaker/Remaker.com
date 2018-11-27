@@ -6,7 +6,7 @@ body, html {
 
 .bgimg-1 {
   position: relative;
-  opacity: 0.75;
+  opacity: 0.60;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,22 +19,40 @@ body, html {
 
 .caption {
   position: absolute;
-  top: 65%;
+  top: 60%;
   width: 100%;
   text-align: center;
-  color: white;
-  opacity:1;
+  color: black;
+  opacity: 1;
 }
 
 h1 {
   font-family: 'Limelight', cursive;
-  font-size: 50pt;
+  font-size: 40pt;
   margin: 0;
+  opacity: 1;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 15pt;
-  margin-top: -10px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
 
+#about {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  color: black;
+  height: 2em;
+  width: 10em;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  padding: .2em;
+  font-weight: bold;
+}
+
+#about:hover {
+  background-color: #f693b1;
 }
