@@ -38,9 +38,6 @@ header li {
   padding-left: 15px;
 }
 
-header li:hover {
-  cursor: pointer;
-}
 
 .bg {
   position: absolute;
@@ -66,6 +63,7 @@ header li:hover {
 
 }
 
+
 .caption {
   position: absolute;
   top: 55%;
@@ -87,8 +85,4 @@ h2 {
   font-size: 15pt;
   margin-top: -5px;
   margin-bottom: 10px;
-}
-
-.selected {
-  font-weight: bold;
 }

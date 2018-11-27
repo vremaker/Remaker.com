@@ -21,11 +21,30 @@
    */
   function initialize() {
     $("aboutbtn").addEventListener("click", aboutPg);
-
+    $("photobtn").addEventListener("click", photoPg);
+    $("ripbtn").addEventListener("click", ripPg);
+    $("caddy").addEventListener("click", caddy);
+    $("cats").addEventListener("click", cats);
   }
 
-  function aboutPg(){
+  function aboutPg() {
+    alert("bob");
+  }
 
+  function photoPg() {
+    alert("beep");
+  }
+
+  function ripPg(){
+    alert("rip");
+  }
+
+  function caddy(){
+    alert("Cad");
+  }
+
+  function cats() {
+    alert("mewww");
   }
 
   /* ------------------------------ Helper Functions  ------------------------------ */
