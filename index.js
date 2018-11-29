@@ -1,50 +1,54 @@
-// Name: _your name here_
-// Date: _add date here_
-// Section: CSE 154 _your section here_
-//
-// -- your description of what this file does here --
-//
-
 (function() {
   "use strict";
-
-  // MODULE GLOBAL VARIABLES, CONSTANTS, AND HELPER FUNCTIONS CAN BE PLACED
-  // HERE
-
-  /**
-   *  Add a function that will be called when the window is loaded.
-   */
   window.addEventListener("load", initialize);
-
-  /**
-   *  CHANGE: Describe what your initialize function does here.
-   */
+  const tabs = ["landing", "about", "photos", "rip", "noelderado", "remeowkers"];
+  //initializes all button presses
   function initialize() {
     $("aboutbtn").addEventListener("click", aboutPg);
     $("photobtn").addEventListener("click", photoPg);
     $("ripbtn").addEventListener("click", ripPg);
     $("caddy").addEventListener("click", caddy);
     $("cats").addEventListener("click", cats);
+    $("remaker").addEventListener("click", backHome);
   }
 
+  function backHome() {
+    setPage("landing");
+  }
+
+  function setPage(desiredLocation) {
+    for (let i = 0; i < tabs.length; i++) {
+      if(tabs[i] === desiredLocation){
+          $(tabs[i]).classList.remove("hidden");
+      } else {
+        $(tabs[i]).classList.add("hidden");
+      }
+    }
+    if(desiredLocation === "landing") {
+      qs("header").classList.remove("page");
+    } else {
+        qs("header").classList.add("page");
+    }
+    }
+
   function aboutPg() {
-    alert("bob");
+    setPage("about");
   }
 
   function photoPg() {
-    alert("beep");
+    setPage("photos");
   }
 
   function ripPg(){
-    alert("rip");
+    setPage("rip");
   }
 
   function caddy(){
-    alert("Cad");
+    setPage("noelderado");
   }
 
   function cats() {
-    alert("mewww");
+    setPage("remeowkers");
   }
 
   /* ------------------------------ Helper Functions  ------------------------------ */

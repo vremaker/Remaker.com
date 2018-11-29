@@ -5,6 +5,9 @@ body, html {
   padding:0;
 }
 
+.page {
+  background-color: green;
+}
 header{
   position: absolute;
   top:0;
@@ -19,13 +22,13 @@ header{
 }
 
 header h1 {
-  font-size: 20pt;
+  font-size: 2vw;
   padding-left: 1%;
   align-self: center;
 }
 
 header ul{
-  font-size: 15pt;
+  font-size: 1.5vw;
   font-family: 'Open Sans', sans-serif;
   padding-right: 1%;
   align-self: center;
@@ -35,10 +38,10 @@ header ul{
 
 header li {
   list-style-type: none;
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
-header li:hover {
+header li:hover, #remaker:hover {
   cursor: pointer;
 }
 
@@ -62,7 +65,7 @@ header li:hover {
   background-size: cover;
   background-color: black;
   height: 100%;
-  opacity: .4;
+  opacity: .2;
 
 }
 
@@ -77,18 +80,26 @@ header li:hover {
 
 h1 {
   font-family: 'Limelight', cursive;
-  font-size: 40pt;
+  font-size: 6vw;
   margin: 0;
   opacity: 1;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15pt;
+  font-size: 2.5vw;
   margin-top: -5px;
   margin-bottom: 10px;
 }
 
 .selected {
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.background {
+  background-color: blue;
 }
